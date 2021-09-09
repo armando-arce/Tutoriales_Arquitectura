@@ -1,0 +1,9 @@
+[
+  {
+    "name": "blog-slug",
+    "path": "/blog/:slug?",
+    "component": "/Users/armando/Documents/GitHub/Tutoriales-Arquitectura/Tutorial_02/pages/blog/_slug.vue",
+    "chunkName": "pages/blog/_slug",
+    "_name": "_58576334"
+  }
+]

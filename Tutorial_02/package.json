@@ -12,7 +12,7 @@
     "post-update": "yarn upgrade --latest"
   },
   "dependencies": {
-    "nuxt": "^2.15.0",
-	"@nuxt/content": "^1.14.0"
+    "@nuxt/content": "^1.14.0",
+    "nuxt": "^2.15.8"
   }
 }
