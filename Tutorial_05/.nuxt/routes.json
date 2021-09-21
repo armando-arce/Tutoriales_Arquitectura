@@ -1,0 +1,50 @@
+[
+  {
+    "name": "authors_index",
+    "path": "/authors_index",
+    "component": "/Users/armando/Documents/GitHub/Tutoriales-Arquitectura/Tutorial_04/pages/authors_index.vue",
+    "chunkName": "pages/authors_index"
+  },
+  {
+    "name": "books_index",
+    "path": "/books_index",
+    "component": "/Users/armando/Documents/GitHub/Tutoriales-Arquitectura/Tutorial_04/pages/books_index.vue",
+    "chunkName": "pages/books_index"
+  },
+  {
+    "name": "publishers_index",
+    "path": "/publishers_index",
+    "component": "/Users/armando/Documents/GitHub/Tutoriales-Arquitectura/Tutorial_04/pages/publishers_index.vue",
+    "chunkName": "pages/publishers_index"
+  },
+  {
+    "name": "search",
+    "path": "/search",
+    "component": "/Users/armando/Documents/GitHub/Tutoriales-Arquitectura/Tutorial_04/pages/search.vue",
+    "chunkName": "pages/search"
+  },
+  {
+    "name": "authors-slug",
+    "path": "/authors/:slug?",
+    "component": "/Users/armando/Documents/GitHub/Tutoriales-Arquitectura/Tutorial_04/pages/authors/_slug.vue",
+    "chunkName": "pages/authors/_slug"
+  },
+  {
+    "name": "books-slug",
+    "path": "/books/:slug?",
+    "component": "/Users/armando/Documents/GitHub/Tutoriales-Arquitectura/Tutorial_04/pages/books/_slug.vue",
+    "chunkName": "pages/books/_slug"
+  },
+  {
+    "name": "publishers-slug",
+    "path": "/publishers/:slug?",
+    "component": "/Users/armando/Documents/GitHub/Tutoriales-Arquitectura/Tutorial_04/pages/publishers/_slug.vue",
+    "chunkName": "pages/publishers/_slug"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/armando/Documents/GitHub/Tutoriales-Arquitectura/Tutorial_04/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]
