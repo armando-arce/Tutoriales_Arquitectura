@@ -5,9 +5,7 @@ edition: 2nd
 copyright: 2006
 language: ENGLISH
 pages: 1040
-author: Alfed V. Aho
 authorId: author_3
-publisher: Addison Wesley
 publisherId: publisher_3
 image: books/book_5.jpg
 ---

@@ -3,7 +3,9 @@ id: author_1
 name: Abraham Silberschatz
 nationality: Israelis / American
 birth_year: 1952
-fields: Database Systems, Operating Systems
+fields:
+  - Database Systems
+  - Data Structures
 image: authors/author_1.jpg
 ---
 

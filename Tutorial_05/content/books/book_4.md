@@ -5,9 +5,7 @@ edition: 4th
 copyright: 2014
 language: ENGLISH
 pages: 1136
-author: Andrew S. Tanenbaum
 authorId: author_2
-publisher: Pearson Education
 publisherId: publisher_2
 image: books/book_4.jpg
 ---

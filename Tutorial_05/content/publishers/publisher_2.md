@@ -3,7 +3,8 @@ id: publisher_2
 name: Pearson Education
 country: United Kingdom
 founded: 1844
-genere: Education
+genere: 
+  - Education
 image: publishers/publisher_2.png
 ---
 

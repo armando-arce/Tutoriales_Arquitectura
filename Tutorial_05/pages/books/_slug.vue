@@ -2,7 +2,9 @@
   export default {
     async asyncData({ $content, params }) {
       const book = await $content('books', params.slug).fetch()
-        return { book }
+      const author = await $content('authors').where({ id: book.authorId }).only(['name']).fetch()
+      const publisher = await $content('publishers').where({ id: book.publisherId }).only(['name']).fetch()
+      return { book, author, publisher }
     }
   }
 </script>
@@ -16,10 +18,10 @@
      </div>
      <div class="six columns">
        <h4>{{book.title}}</h4>
-	   by <NuxtLink :to="'/authors/'+book.authorId">{{book.author}}</NuxtLink></br>
+	   by <NuxtLink :to="'/authors/'+book.authorId">{{author[0].name}}</NuxtLink></br>
 	   Edition: {{book.edition}}; Copyright: {{book.copyright}}; 
 	   Language: {{book.language}}; Pages: {{book.pages}}</br>
-	   published by <NuxtLink :to="'/publishers/'+book.publisherId">{{book.publisher}}</NuxtLink></br></br>
+	   published by <NuxtLink :to="'/publishers/'+book.publisherId">{{publisher[0].name}}</NuxtLink></br></br>
 	   <b>Description</b></br>
 	    <nuxt-content :document="book" />
 	 </div>

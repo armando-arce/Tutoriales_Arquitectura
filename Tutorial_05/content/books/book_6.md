@@ -5,9 +5,7 @@ edition: 1st
 copyright: 1983
 language: ENGLISH
 pages: 448
-author: Alfred V. Aho
 authorId: author_3
-publisher: Pearson Education
 publisherId: publisher_2
 image: books/book_6.jpg
 ---

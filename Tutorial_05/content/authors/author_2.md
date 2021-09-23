@@ -3,7 +3,9 @@ id: author_2
 name: Andrew S. Tanenbaum
 nationality: Dutch / American
 birth_year: 1944
-fields: Distributed computing, Operating Systems
+fields: 
+  - Distributed computing
+  - Operating Systems
 image: authors/author_2.jpg
 ---
 

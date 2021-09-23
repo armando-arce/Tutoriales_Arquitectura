@@ -3,7 +3,8 @@ id: publisher_3
 name: Addison Wesley
 country: United States
 founded: 1942
-genere: Computer Science
+genere: 
+  - Computer Science
 image: publishers/publisher_3.png
 ---
 

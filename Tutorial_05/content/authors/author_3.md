@@ -3,7 +3,9 @@ id: author_3
 name: Alfred V. Aho
 nationality: Canadian
 birth_year: 1941
-fields: Compilers, Data Structures
+fields: 
+  - Compilers
+  - Data Structures
 image: authors/author_3.jpg
 ---
 
