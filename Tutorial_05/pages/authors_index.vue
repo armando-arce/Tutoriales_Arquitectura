@@ -1,10 +1,7 @@
 <script>
   export default {
     async asyncData({ $content, params }) {
-      const authors = await $content('authors')
-        .only(['name', 'slug'])
-        .sortBy('createdAt', 'asc')
-        .fetch()
+      const authors = await $content('authors').fetch()
       return {
         authors
       }

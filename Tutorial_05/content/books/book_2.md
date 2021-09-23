@@ -6,9 +6,9 @@ copyright: 2010
 language: ENGLISH
 pages: 1376
 author: Abraham Silberschatz
-author_id: author_1
+authorId: author_1
 publisher: John Wiley & Sons
-publisher_id: author_1
+publisherId: publisher_1
 image: books/book_2.jpg
 ---
 

@@ -6,9 +6,9 @@ copyright: 1983
 language: ENGLISH
 pages: 448
 author: Alfred V. Aho
-author_id: author_3
+authorId: author_3
 publisher: Pearson Education
-publisher_id: publisher_2
+publisherId: publisher_2
 image: books/book_6.jpg
 ---
 

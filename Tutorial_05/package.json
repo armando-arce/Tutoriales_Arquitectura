@@ -1,5 +1,5 @@
 {
-  "name": "Tutorial_03",
+  "name": "Tutorial_04",
   "version": "1.0.0",
   "description": "Nuxt starter for CodeSandBox",
   "author": "Armando Arce",
@@ -8,11 +8,10 @@
     "dev": "MINIMAL=1 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "post-update": "yarn upgrade --latest"
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
-    "nuxt": "^2.15.8"
+    "nuxt": "^2.14.0"
   }
 }

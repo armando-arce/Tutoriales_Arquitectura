@@ -6,9 +6,9 @@ copyright: 2010
 language: ENGLISH
 pages: 960
 author: Andrew S. Tanenbaum
-author_id: author_2
+authorId: author_2
 publisher: Pearson Education
-publisher_id: publisher_2
+publisherId: publisher_2
 image: books/book_3.jpg
 ---
 

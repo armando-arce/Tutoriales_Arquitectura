@@ -1,4 +1,5 @@
 export default {
+	target: 'static',
     modules: ['@nuxt/content'],
     components: true,
     head: {
@@ -13,6 +14,7 @@ export default {
         { rel: 'stylesheet', href: 'css/normalize.css'},
         { rel: 'stylesheet', href: 'css/skeleton.css'},
         { rel: 'icon', type:"image/png", href: 'images/favicon.png'}
+		{ rel: 'javascript' src:"https://identity.netlify.com/v1/netlify-identity-widget.js"}
       ]
     }
 }

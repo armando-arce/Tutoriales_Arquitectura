@@ -10,44 +10,21 @@
 <template>
   <div class="container">
    <HeaderView />
-   <h4 style="margin-top: 15px">{{ title }}</h4>
-   <h5>Book's details</h5>
-   <form>
-     <div class="row">
-       <div class="six columns">
-          <label for="idInput">ID</label>
-          <input class="u-full-width" type="text" id="id" v-model="book.id" readonly/>
-       </div>
-       <div class="six columns">
-          <label for="copyrightInput">Copyright</label>
-          <input class="u-full-width" type="text" id="copyright" v-model="book.copyright" readonly/>
-       </div>
+   <div class="row">
+     <div class="three columns">
+       <img class="u-max-full-width" :src="'/images/'+book.image" alt="Italian Trulli">
      </div>
-     <div class="row">
-       <div class="six columns">
-          <label for="editionInput">Edition</label>
-          <input class="u-full-width" type="text" id="edition" v-model="book.edition" readonly/>
-       </div>
-       <div class="six columns">
-          <label for="languageInput">Language</label>
-          <input class="u-full-width" type="text" id="language" v-model="book.language" readonly/>
-       </div>
-     </div>
-     <div class="row">
-       <div class="six columns">
-          <label for=" authorInput">Author</label>
-          <NuxtLink :to="{ name: 'authors-slug', params: { slug: book.author } }">
-            <input class="u-full-width" type="button" id=" author" v-model="book.author" readonly/>
-          </NuxtLink>
-       </div>
-       <div class="six columns">
-          <label for="languageInput">Publisher</label>
-          <NuxtLink :to="{ name: 'publishers-slug', params: { slug: book.publisher } }">
-            <input class="u-full-width" type="button" id="publisher" v-model="book.publisher" readonly/>
-          </NuxtLink>
-       </div>
-     </div>
-   </form>
+     <div class="six columns">
+       <h4>{{book.title}}</h4>
+	   by <NuxtLink :to="'/authors/'+book.authorId">{{book.author}}</NuxtLink></br>
+	   Edition: {{book.edition}}; Copyright: {{book.copyright}}; 
+	   Language: {{book.language}}; Pages: {{book.pages}}</br>
+	   published by <NuxtLink :to="'/publishers/'+book.publisherId">{{book.publisher}}</NuxtLink></br></br>
+	   <b>Description</b></br>
+	    <nuxt-content :document="book" />
+	 </div>
+	 <div class="two columns"></div>
+   </div>
    <FooterView />
  </div>
 </template>

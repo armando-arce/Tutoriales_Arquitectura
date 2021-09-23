@@ -4,7 +4,7 @@ name: Addison Wesley
 country: United States
 founded: 1942
 genere: Computer Science
-image: publishers/publisher_3.jpg
+image: publishers/publisher_3.png
 ---
 
 Addison-Wesley is an American publisher of textbooks and computer literature. It is an imprint of Pearson PLC, a global publishing and education company. In addition to publishing books, Addison-Wesley also distributes its technical titles through the Safari Books Online e-reference service. Addison-Wesley's majority of sales derive from the United States (55%) and Europe (22%).[1]

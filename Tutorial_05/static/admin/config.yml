@@ -1,0 +1,49 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: static/img
+public_folder: img
+collections:
+  - name: "authors"
+    label: "Authors"
+    folder: "content/authors"
+    create: true
+    slug: "author_{{second}}"
+    fields:
+      - {label: "Id", name: "id", widget: "hidden", default: "author_{{second}}"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Nationality", name: "nationality", widget: "string"}
+      - {label: "Birth_year", name: "birth_year", widget: "number"}
+      - {label: "Fields", name: "fields", widget: "string"}
+      - {label: "Image", name: "image", widget: image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "publishers"
+    label: "Publishers"
+    folder: "content/publishers"
+    create: true
+    slug: "publisher_{{second}}"
+    fields:
+      - {label: "Id", name: "id", widget: "hidden", default: "publisher_{{second}}"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Country", name: "country", widget: "string"}
+      - {label: "Founded", name: "founded", widget: "number"}
+      - {label: "Genere", name: "genere", widget: "string"}
+      - {label: "Image", name: "image", widget: image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "books"
+    label: "Books"
+    folder: "content/books"
+    create: true
+    slug: "book_{{second}}"
+    fields:
+      - {label: "Id", name: "id", widget: "hidden", default: "book_{{second}}"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Edition", name: "edition", widget: "string"}
+      - {label: "Copyright", name: "copyright", widget: "number"}
+      - {label: "Language", name: "language", widget: "string"}
+      - {label: "Pages", name: "pages", widget: "number"}
+      - {label: "Author", name: "author_id", widget: "relation",
+          collection: "authors", search_fields: "name", value_field: "id"}
+      - {label: "Publisher", name: "publisher", widget: "relation",
+          collection: "publishers", search_fields: "name", value_field: "id"}
+      - {label: "Body", name: "body", widget: "markdown"}
