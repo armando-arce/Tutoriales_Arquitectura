@@ -1,13 +1,13 @@
 <template>
- <div class="container">
+  <div class="container">
    <HeaderView />
-   <h2 style="margin-top: 15px">Computer Science Books</h2>
-	  <p>This website offers information on computer science books, authors and publishers.</p>
-    <ul>
-	  <li> <NuxtLink to="/books_index">Books information</NuxtLink></li>
-	  <li> <NuxtLink to="/authors_index">Authors information</NuxtLink></li>
-	  <li> <NuxtLink to="/publishers_index">Publishers information</NuxtLink></li>
-	</ul>
+   <h3 style="margin-top: 15px">Books Information</h3>
+     <p>This section presents information about books</p>
+   <ul>
+     <li v-for="book of books" :key="book.slug">
+       <NuxtLink :to="{ name: 'books-slug', params: { slug: book.slug } }">{{book.title}}</NuxtLink>
+     </li>
+   </ul>
    <FooterView />
  </div>
 </template>
