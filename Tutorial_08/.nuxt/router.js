@@ -4,9 +4,9 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _25bd37ee = () => interopDefault(import('../pages/books_index.vue' /* webpackChunkName: "pages/books_index" */))
-const _1da58cf1 = () => interopDefault(import('../pages/books/_slug.vue' /* webpackChunkName: "pages/books/_slug" */))
-const _dcc04b44 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _3752fd4a = () => interopDefault(import('../pages/books_index.vue' /* webpackChunkName: "pages/books_index" */))
+const _67d72632 = () => interopDefault(import('../pages/books/_slug.vue' /* webpackChunkName: "pages/books/_slug" */))
+const _3b6c8f42 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -21,15 +21,15 @@ export const routerOptions = {
 
   routes: [{
     path: "/books_index",
-    component: _25bd37ee,
+    component: _3752fd4a,
     name: "books_index"
   }, {
     path: "/books/:slug?",
-    component: _1da58cf1,
+    component: _67d72632,
     name: "books-slug"
   }, {
     path: "/",
-    component: _dcc04b44,
+    component: _3b6c8f42,
     name: "index"
   }],
 

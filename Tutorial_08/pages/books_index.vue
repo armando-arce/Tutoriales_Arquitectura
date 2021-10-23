@@ -1,7 +1,9 @@
 <script>
+  import util from '~/assets/js/util'
   export default {
     async asyncData({ params, $axios }) {
-      const books = await $axios.$get('https://api.typewriter.cloud/arce/bookstore/types/book')
+      let books = await $axios.$get('https://api.typewriter.cloud/arce/bookstore/types/book')
+      books.forEach(book => util.cmsToObj(book))
       return {
         books
       }
@@ -16,9 +18,7 @@
      <p>This section presents information about books</p>
    <ul>
      <li v-for="book of books" :key="book.slug">
-       <NuxtLink :to="{ name: 'books-slug', params: { slug: book.slug } }">
-         {{book.fields.find(field => field.label === 'title').value}}
-       </NuxtLink>
+       <NuxtLink :to="{ name: 'books-slug', params: { slug: book.slug } }">{{book.title}}</NuxtLink>
      </li>
    </ul>
    <FooterView />
